@@ -98,8 +98,9 @@
 
 &trackball_listener {
     input-processors = 
-        <&zip_xy_scaler 9 20>,
-        <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;
+        <&zip_xy_scaler 3 20>,
+        <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+        <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;
 
     scroller {
         layers = <1>;
