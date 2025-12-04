@@ -87,6 +87,11 @@
             bindings = <&mkp LCLK>;
             key-positions = <41 42>;
         };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <31 32>;
+        };
     };
 
     behaviors {
