@@ -62,7 +62,7 @@
 
         base {
             bindings = <
-&hold_mo_tap_mkp 1 MB1  &hold_mo_tap_mkp 2 MB2
+&mkp MB4  &mkp MB5
             >;
 
             display-name = "Base";
