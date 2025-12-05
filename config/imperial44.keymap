@@ -175,7 +175,7 @@
             label = "ru";
         };
 
-        navi {
+        nav {
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &trans     &trans    &trans  &trans     &trans
 &trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans
@@ -184,10 +184,10 @@
             >;
 
             display-name = "macnavi";
-            label = "navi";
+            label = "nav";
         };
 
-        symbols {
+        sym {
             bindings = <
 &none  &kp EXCL  &kp AT_SIGN              &kp HASH                  &kp DOLLAR    &none                                        &trans  &trans  &trans  &trans  &trans  &trans
 &none  &none     &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS  &kp RU_COLON  &none                                        &trans  &trans  &trans  &trans  &trans  &trans
@@ -196,10 +196,10 @@
             >;
 
             display-name = "symbols";
-            label = "symbols";
+            label = "sym";
         };
 
-        func {
+        fun {
             bindings = <
 &bootloader  &trans  &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &trans       &trans  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &trans        &studio_unlock
@@ -208,10 +208,10 @@
             >;
 
             display-name = "func";
-            label = "func";
+            label = "fun";
         };
 
-        numbers {
+        num {
             bindings = <
 &kp PRCNT  &kp N1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LPAR   &kp N6  &kp RU_N7        &kp RU_N8     &kp RU_N9     &kp N0                             &trans  &trans  &trans  &trans  &trans  &trans
@@ -220,7 +220,7 @@
             >;
 
             display-name = "numbers";
-            label = "numbers";
+            label = "num";
         };
     };
 };
