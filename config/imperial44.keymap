@@ -88,9 +88,14 @@
             key-positions = <41 42>;
         };
 
-        capsword {
-            bindings = <&caps_word>;
+        mk4 {
+            bindings = <&mkp MB4>;
             key-positions = <31 32>;
+        };
+
+        mk5 {
+            bindings = <&mkp MB5>;
+            key-positions = <32 33>;
         };
     };
 
