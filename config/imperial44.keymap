@@ -183,7 +183,7 @@
                                          &trans     &trans     &kp LS(LC(LG(NUMBER_4)))    &kp LG(C)  &kp LG(V)  &kp LG(A)
             >;
 
-            display-name = "macnavi";
+            display-name = "nav";
             label = "nav";
         };
 
@@ -195,7 +195,7 @@
                                                                     &kp EXCL      &kp RU_QUESTION  &kp RA(NUMBER_3)    &none   &trans  &none
             >;
 
-            display-name = "symbols";
+            display-name = "sym";
             label = "sym";
         };
 
@@ -207,8 +207,8 @@
                                       &trans   &trans   &trans    &trans  &trans        &trans
             >;
 
-            display-name = "func";
-            label = "fun";
+            display-name = "fn";
+            label = "fn";
         };
 
         num {
@@ -219,7 +219,7 @@
                                                   &kp RU_DOT    &kp RU_SLASH  &trans       &trans  &trans  &trans
             >;
 
-            display-name = "numbers";
+            display-name = "num";
             label = "num";
         };
     };
