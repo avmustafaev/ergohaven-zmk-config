@@ -39,7 +39,7 @@
             layers = <1>;
         };
 
-        reshetka {
+        reshetka_ru {
             bindings = <&kp LA(NUMBER_3)>;
             key-positions = <16 17>;
             layers = <1>;
@@ -51,18 +51,6 @@
             layers = <1>;
         };
 
-        lvoetoch {
-            bindings = <&kp RU_COLON>;
-            key-positions = <6 7>;
-            layers = <1>;
-        };
-
-        kavichki {
-            bindings = <&kp RU_DOUBLE_QUOTES>;
-            key-positions = <7 8>;
-            layers = <1>;
-        };
-
         mk4 {
             bindings = <&mkp MB4>;
             key-positions = <37 36>;
@@ -71,6 +59,13 @@
         hardsign {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <33 34>;
+            layers = <1>;
+        };
+
+        reshetka_en {
+            bindings = <&kp HASH>;
+            key-positions = <17 16>;
+            layers = <0>;
         };
     };
 
