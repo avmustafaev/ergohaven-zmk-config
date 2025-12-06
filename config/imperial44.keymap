@@ -177,9 +177,9 @@
 
         nav {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &trans     &trans    &trans  &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)  &kp LS(LG(LC(NUMBER_4)))    &trans     &trans     &trans     &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &trans     &msc SCRL_UP  &msc SCRL_DOWN  &trans     &none
+&trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &kp LEFT   &kp DOWN      &kp UP          &kp RIGHT  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)  &kp LS(LG(LC(NUMBER_4)))    &trans     &trans     &trans     &trans        &trans          &trans     &trans
                                          &trans     &trans     &kp LS(LC(LG(NUMBER_4)))    &kp LG(C)  &kp LG(V)  &kp LG(A)
             >;
 
@@ -202,7 +202,7 @@
         fun {
             bindings = <
 &bootloader  &trans  &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&trans       &trans  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &trans        &studio_unlock
+&trans       &trans  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &bt BT_SEL 0  &studio_unlock
 &trans       &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &trans        &trans
                                       &trans   &trans   &trans    &trans  &trans        &trans
             >;
