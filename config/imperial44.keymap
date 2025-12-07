@@ -179,10 +179,10 @@
             label = "num ru";
             display-name = "num ru";
             bindings = <
-&kp PRCNT         &kp N1   &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                &none  &none  &none  &none  &none  &none
-&none             &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                      &none  &none  &none  &none  &none  &none
-&kp LS(LA(NUBS))  &kp DOT  &kp RU_ASTERISK  &kp MINUS     &kp PLUS         &none                    &kp EQUAL                   &none  &none  &none  &none  &none  &none  &none
-                                                          &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none  &none  &none
+&kp PRCNT              &kp N1   &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                &none  &none  &none  &none  &none  &none
+&none                  &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                      &none  &none  &none  &none  &none  &none
+&kp LS(LA(BACKSLASH))  &kp DOT  &kp RU_ASTERISK  &kp MINUS     &kp PLUS         &none                    &kp EQUAL                   &none  &none  &none  &none  &none  &none  &none
+                                                               &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none  &none  &none
             >;
         };
 
@@ -190,7 +190,7 @@
             bindings = <
 &none     &none      &none      &none      &none      &none                                         &none  &none     &none     &none   &none      &none
 &none     &none      &none      &none      &none      &none                                         &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&kp NUBS  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)         &none                &none  &none  &none     &none     &none   &none      &none
+&kp BSLH  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)         &none                &none  &none  &none     &none     &none   &none      &none
                                            &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
             >;
 
@@ -202,10 +202,10 @@
             label = "nav ru";
             display-name = "nav";
             bindings = <
-&none     &none      &none      &none      &none         &none                                         &none  &none     &none     &none   &none      &none
-&none     &none      &none      &none      &none         &none                                         &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&kp NUBS  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(A)         &none                &none  &none  &none     &none     &none   &none      &none
-                                           &kp RU_COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
+&none             &none      &none      &none      &none         &none                              &none  &none     &none     &none   &none      &none
+&none             &none      &none      &none      &none         &none                              &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&kp RU_BACKSLASH  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(A)      &none        &none  &none  &none     &none     &none   &none      &none
+                                                   &kp RU_COLON  &kp LS(GRAVE)  &kp GRAVE    &none  &none  &none
             >;
         };
 
