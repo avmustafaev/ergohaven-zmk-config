@@ -135,6 +135,13 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        kv_sk_left: kv_sk_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &kp LEFT_BRACKET &to_ru>;
+            label = "KV_SK_LEFT";
+        };
     };
 
     keymap {
@@ -208,10 +215,10 @@
             label = "ru nav";
             display-name = "ru nav";
             bindings = <
-&none             &none  &none  &none  &none         &none                                             &none  &none     &none     &none   &none      &none
-&none             &none  &none  &none  &none         &none                                             &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&kp RU_BACKSLASH  &none  &none  &none  &none         &none             &kp LG(X)            &kp LG(A)  &none  &none     &none     &none   &none      &none
-                                       &kp RU_COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none      &none  &none
+&none             &none  &none  &none  &none         &none                                        &none  &none     &none     &none   &none      &none
+&none             &none  &none  &none  &none         &none                                        &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&kp RU_BACKSLASH  &none  &none  &none  &none         &none        &kp LG(X)            &kp LG(A)  &none  &none     &none     &none   &none      &none
+                                       &kp RU_COLON  &kv_sk_left  &kp RIGHT_BRACKET    &none      &none  &none
             >;
         };
 
@@ -231,10 +238,10 @@
             label = "ru sym";
             display-name = "ru sym";
             bindings = <
-&none  &none  &none  &none  &kp DOLLAR        &none                               &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none             &none                               &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none             &none          &none         &none  &none  &none  &none  &none  &none  &none
-                            &kp RU_SEMICOLON  &kp LA(RU_N9)  &kp LA(N0)    &none  &none  &none
+&none  &none  &none  &none  &kp DOLLAR        &none                                       &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none             &none                                       &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none             &none              &none             &none  &none  &none  &none  &none  &none  &none
+                            &kp RU_SEMICOLON  &kp LA(LS(RU_N9))  &kp LA(LS(N0))    &none  &none  &none
             >;
         };
 
