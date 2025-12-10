@@ -150,6 +150,9 @@
 
             display-name = "en";
             label = "en";
+            sensor-bindings =
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp LS(LA(RIGHT_ARROW)) LS(LA(LEFT_ARROW))>;
         };
 
         ru {
@@ -161,6 +164,9 @@
             >;
 
             label = "ru";
+            sensor-bindings =
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp LS(LA(RIGHT_ARROW)) LS(LA(LEFT_ARROW))>;
         };
 
         num {
