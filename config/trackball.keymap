@@ -62,7 +62,7 @@
 
         base {
             bindings = <
-&mkp MB4  &mo 1
+&mo 1  &mkp MB4
             >;
 
             display-name = "Base";
