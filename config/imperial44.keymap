@@ -142,6 +142,13 @@
             bindings = <&to_en &kp LEFT_BRACKET &to_ru>;
             label = "KV_SK_LEFT";
         };
+
+        kv_sk_right: kv_sk_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &kp RIGHT_BRACKET &to_ru>;
+            label = "KV_SK_RIGHT";
+        };
     };
 
     keymap {
@@ -169,6 +176,7 @@
 &kp LS(BSLH)  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &kp LG(C)    &kp LG(V)    &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &mkp MB1                        &mkp MB2
                                                                                                               &kp RU_EXCL                    &layer_en           &kp SPACE    &lt 3 ENTER  &lt 5 LA(BACKSPACE)  &lt 7 BACKSPACE
             >;
+
             display-name = "ru    ";
             label = "ru";
             sensor-bindings =
@@ -178,10 +186,10 @@
 
         num {
             bindings = <
-&kp PRCNT  &kp N1   &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &none  &none  &none  &none  &none  &none
-&none      &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9     &kp N0                            &none  &none  &none  &none  &none  &none
-&kp PIPE   &kp DOT  &kp RU_ASTERISK  &none         &kp PLUS      &kp MINUS     &kp EQUAL    &none  &none  &none  &none  &none  &none  &none
-                                                   &kp QUESTION  &kp LPAR      &kp RPAR     &none  &none  &none
+&kp PRCNT  &kp N1   &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                          &none  &none  &none  &none  &none  &none
+&none      &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9     &kp N0                                &none  &none  &none  &none  &none  &none
+&kp PIPE   &kp DOT  &kp RU_ASTERISK  &kp PLUS      &kp MINUS     &kp EQUAL     &kp LG(X)    &kp LG(A)  &none  &none  &none  &none  &none  &none
+                                                   &kp QUESTION  &kp LPAR      &kp RPAR     &none      &none  &none
             >;
 
             display-name = "en num";
@@ -192,19 +200,19 @@
             label = "ru num";
             display-name = "ru num";
             bindings = <
-&kp PRCNT              &kp N1      &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                &none  &none  &none  &none  &none  &none
-&none                  &kp N6      &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                      &none  &none  &none  &none  &none  &none
-&kp LS(LA(BACKSLASH))  &kp RU_DOT  &kp RU_ASTERISK  &none         &kp PLUS         &kp MINUS                &kp EQUAL                   &none  &none  &none  &none  &none  &none  &none
-                                                                  &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none  &none  &none
+&kp PRCNT              &kp N1      &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                    &none  &none  &none  &none  &none  &none
+&none                  &kp N6      &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                          &none  &none  &none  &none  &none  &none
+&kp LS(LA(BACKSLASH))  &kp RU_DOT  &kp RU_ASTERISK  &kp RU_PLUS   &kp RU_MINUS     &kp RU_EQUAL             &kp LG(X)                   &kp LG(A)  &none  &none  &none  &none  &none  &none
+                                                                  &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none      &none  &none
             >;
         };
 
         nav {
             bindings = <
-&none     &none  &none  &none  &none      &none                                             &none  &none     &none     &none   &none      &none
-&none     &none  &none  &none  &none      &none                                             &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&kp BSLH  &none  &none  &none  &none      &none             &kp LG(X)            &kp LG(A)  &none  &none     &none     &none   &none      &none
-                               &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none      &none  &none
+&none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
+&none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
+&kp BSLH  &none  &none  &none  &none      &none             &none                &none  &none  &none  &none  &none  &none  &none
+                               &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
             >;
 
             display-name = "en nav";
@@ -215,19 +223,19 @@
             label = "ru nav";
             display-name = "ru nav";
             bindings = <
-&none             &none  &none  &none  &none         &none                                        &none  &none     &none     &none   &none      &none
-&none             &none  &none  &none  &none         &none                                        &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&kp RU_BACKSLASH  &none  &none  &none  &none         &none        &kp LG(X)            &kp LG(A)  &none  &none     &none     &none   &none      &none
-                                       &kp RU_COLON  &kv_sk_left  &kp RIGHT_BRACKET    &none      &none  &none
+&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
+&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
+&kp RU_BACKSLASH  &none  &none  &none  &none         &none        &none           &none  &none  &none  &none  &none  &none  &none
+                                       &kp RU_COLON  &kv_sk_left  &kv_sk_right    &none  &none  &none
             >;
         };
 
         sym {
             bindings = <
-&none  &none  &none  &none  &kp DOLLAR  &none                                     &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none       &none                                     &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none       &none           &none              &none  &none  &none  &none  &none  &none  &none
-                            &kp SEMI    &kp LEFT_BRACE  &kp RIGHT_BRACE    &none  &none  &none
+&none  &none  &none  &none  &none     &none                                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none     &none                                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none     &none           &none              &none  &none  &none  &none  &none  &none  &none
+                            &kp SEMI  &kp LEFT_BRACE  &kp RIGHT_BRACE    &none  &none  &none
             >;
 
             display-name = "en sym";
@@ -238,7 +246,7 @@
             label = "ru sym";
             display-name = "ru sym";
             bindings = <
-&none  &none  &none  &none  &kp DOLLAR        &none                                       &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none             &none                                       &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none             &none                                       &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none             &none              &none             &none  &none  &none  &none  &none  &none  &none
                             &kp RU_SEMICOLON  &kp LA(LS(RU_N9))  &kp LA(LS(N0))    &none  &none  &none
