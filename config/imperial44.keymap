@@ -182,8 +182,8 @@
         };
 
         numru {
-            label = "num ru";
-            display-name = "num ru";
+            label = "ru num";
+            display-name = "ru num";
             bindings = <
 &kp PRCNT              &kp N1      &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                &none  &none  &none  &none  &none  &none
 &none                  &kp N6      &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                      &none  &none  &none  &none  &none  &none
@@ -205,8 +205,8 @@
         };
 
         navru {
-            label = "nav ru";
-            display-name = "nav";
+            label = "ru nav";
+            display-name = "ru nav";
             bindings = <
 &none             &none  &none  &none  &none         &none                                             &none  &none     &none     &none   &none      &none
 &none             &none  &none  &none  &none         &none                                             &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
@@ -228,8 +228,8 @@
         };
 
         symru {
-            label = "sym ru";
-            display-name = "sym";
+            label = "ru sym";
+            display-name = "ru sym";
             bindings = <
 &none  &none  &none  &none  &kp DOLLAR        &none                               &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none             &none                               &none  &none  &none  &none  &none  &none
