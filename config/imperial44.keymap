@@ -151,7 +151,7 @@
             display-name = "en";
             label = "en";
             sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp DOWN_ARROW UP>,
                 <&inc_dec_kp LS(LA(RIGHT_ARROW)) LS(LA(LEFT_ARROW))>;
         };
 
@@ -159,13 +159,13 @@
             bindings = <
 &kp ESC       &kp RU_CYRILLIC_SHORT_I       &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U                 &kp RU_CYRILLIC_KA             &kp RU_CYRILLIC_IE                            &kp RU_CYRILLIC_EN   &kp RU_CYRILLIC_GHE             &kp RU_CYRILLIC_SHA                &kp RU_CYRILLIC_SHCHA          &kp RU_CYRILLIC_ZE              &kp RU_CYRILLIC_HA
 &kp TAB       &hml LEFT_GUI RU_CYRILLIC_EF  &hml LEFT_ALT RU_CYRILLIC_YERU  &hml LEFT_CONTROL RU_CYRILLIC_VE  &hml LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER   &hmr RIGHT_SHIFT RU_CYRILLIC_O  &hmr RIGHT_CONTROL RU_CYRILLIC_EL  &hmr RIGHT_ALT RU_CYRILLIC_DE  &hmr RIGHT_GUI RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp RU_SLASH  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &kp LG(C)    &kp LG(V)    &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &mkp MB1                        &mkp MB2
+&kp LS(BSLH)  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &kp LG(C)    &kp LG(V)    &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &mkp MB1                        &mkp MB2
                                                                                                               &kp RU_EXCL                    &layer_en           &kp SPACE    &lt 3 ENTER  &lt 5 LA(BACKSPACE)  &lt 7 BACKSPACE
             >;
 
             label = "ru";
             sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
                 <&inc_dec_kp LS(LA(RIGHT_ARROW)) LS(LA(LEFT_ARROW))>;
         };
 
@@ -185,10 +185,10 @@
             label = "num ru";
             display-name = "num ru";
             bindings = <
-&kp PRCNT              &kp N1   &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                &none  &none  &none  &none  &none  &none
-&none                  &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                      &none  &none  &none  &none  &none  &none
-&kp LS(LA(BACKSLASH))  &kp DOT  &kp RU_ASTERISK  &none         &kp PLUS         &kp MINUS                &kp EQUAL                   &none  &none  &none  &none  &none  &none  &none
-                                                               &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none  &none  &none
+&kp PRCNT              &kp N1      &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                &none  &none  &none  &none  &none  &none
+&none                  &kp N6      &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                      &none  &none  &none  &none  &none  &none
+&kp LS(LA(BACKSLASH))  &kp RU_DOT  &kp RU_ASTERISK  &none         &kp PLUS         &kp MINUS                &kp EQUAL                   &none  &none  &none  &none  &none  &none  &none
+                                                                  &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none  &none  &none
             >;
         };
 
@@ -208,10 +208,10 @@
             label = "nav ru";
             display-name = "nav";
             bindings = <
-&none             &none  &none  &none  &none         &none                              &none  &none     &none     &none   &none      &none
-&none             &none  &none  &none  &none         &none                              &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&kp RU_BACKSLASH  &none  &none  &none  &none         &none      &kp LG(X)    &kp LG(A)  &none  &none     &none     &none   &none      &none
-                                       &kp RU_COLON  &kp GRAVE  &kp TILDE    &none      &none  &none
+&none             &none  &none  &none  &none         &none                                             &none  &none     &none     &none   &none      &none
+&none             &none  &none  &none  &none         &none                                             &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&kp RU_BACKSLASH  &none  &none  &none  &none         &none             &kp LG(X)            &kp LG(A)  &none  &none     &none     &none   &none      &none
+                                       &kp RU_COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none      &none  &none
             >;
         };
 
@@ -231,10 +231,10 @@
             label = "sym ru";
             display-name = "sym";
             bindings = <
-&none  &none  &none  &none  &kp DOLLAR        &none                                       &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none             &none                                       &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none             &none              &none             &none  &none  &none  &none  &none  &none  &none
-                            &kp RU_SEMICOLON  &kp LS(LA(RU_N9))  &kp LS(LA(N0))    &none  &none  &none
+&none  &none  &none  &none  &kp DOLLAR        &none                               &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none             &none                               &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none             &none          &none         &none  &none  &none  &none  &none  &none  &none
+                            &kp RU_SEMICOLON  &kp LA(RU_N9)  &kp LA(N0)    &none  &none  &none
             >;
         };
 
