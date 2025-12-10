@@ -155,7 +155,7 @@
                                                           &lt 8 EXCL         &layer_ru  &kp SPACE    &lt 2 ENTER  &lt 4 LA(BACKSPACE)  &lt 6 BACKSPACE
             >;
 
-            display-name = "en";
+            display-name = "en    ";
             label = "en";
             sensor-bindings =
                 <&inc_dec_kp DOWN_ARROW UP>,
@@ -169,7 +169,7 @@
 &kp LS(BSLH)  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &kp LG(C)    &kp LG(V)    &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &mkp MB1                        &mkp MB2
                                                                                                               &kp RU_EXCL                    &layer_en           &kp SPACE    &lt 3 ENTER  &lt 5 LA(BACKSPACE)  &lt 7 BACKSPACE
             >;
-
+            display-name = "ru    ";
             label = "ru";
             sensor-bindings =
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>,
@@ -184,7 +184,7 @@
                                                    &kp QUESTION  &kp LPAR      &kp RPAR     &none  &none  &none
             >;
 
-            display-name = "num";
+            display-name = "en num";
             label = "en num";
         };
 
@@ -207,7 +207,7 @@
                                &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none      &none  &none
             >;
 
-            display-name = "nav";
+            display-name = "en nav";
             label = "nav";
         };
 
@@ -230,7 +230,7 @@
                             &kp SEMI    &kp LEFT_BRACE  &kp RIGHT_BRACE    &none  &none  &none
             >;
 
-            display-name = "sym";
+            display-name = "en sym";
             label = "sym";
         };
 
