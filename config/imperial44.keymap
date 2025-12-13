@@ -166,7 +166,7 @@
             label = "en";
             sensor-bindings =
                 <&inc_dec_kp DOWN_ARROW UP>,
-                <&inc_dec_kp LS(LA(RIGHT_ARROW)) LS(LA(LEFT_ARROW))>;
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         ru {
