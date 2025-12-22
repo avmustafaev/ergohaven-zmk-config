@@ -30,13 +30,11 @@
         tochka {
             bindings = <&kp RU_DOT>;
             key-positions = <19 20>;
-            layers = <1>;
         };
 
         zpt {
             bindings = <&kp RU_COMMA>;
             key-positions = <16 15>;
-            layers = <1>;
         };
 
         reshetka_ru {
@@ -49,11 +47,6 @@
             bindings = <&kp LA(NUMBER_2)>;
             key-positions = <12 13>;
             layers = <1>;
-        };
-
-        mk4 {
-            bindings = <&mkp MB4>;
-            key-positions = <37 36>;
         };
 
         hardsign {
@@ -156,10 +149,10 @@
 
         en {
             bindings = <
-&kp ESC   &kp Q            &kp W            &kp E         &kp R              &kp T                                &kp Y                &kp U               &kp I         &kp O             &kp P                &kp LEFT_BRACKET
-&kp TAB   &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                                &kp H                &hmr RIGHT_SHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI  &kp RIGHT_BRACKET
-&kp FSLH  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp LG(C)    &kp LG(V)    &kp N                &kp M               &kp COMMA     &kp DOT           &mkp MB1             &mkp MB2
-                                                          &lt 8 EXCL         &layer_ru  &kp SPACE    &lt 2 ENTER  &lt 4 LA(BACKSPACE)  &lt 6 BACKSPACE
+&kp ESC   &kp Q            &kp W            &kp E         &kp R              &kp T                                                 &kp Y                &kp U               &kp I         &kp O             &kp P                &kp LEFT_BRACKET
+&kp TAB   &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                                                 &kp H                &hmr RIGHT_SHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI  &kp RIGHT_BRACKET
+&kp FSLH  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp LG(LA(LS(NUMBER_4)))    &kp LG(LS(S))  &kp N                &kp M               &kp COMMA     &kp DOT           &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)
+                                                          &lt 8 EXCL         &layer_ru  &kp SPACE                   &lt 2 ENTER    &lt 4 LA(BACKSPACE)  &lt 6 BACKSPACE
             >;
 
             display-name = "en    ";
@@ -173,7 +166,7 @@
             bindings = <
 &kp ESC       &kp RU_CYRILLIC_SHORT_I       &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U                 &kp RU_CYRILLIC_KA             &kp RU_CYRILLIC_IE                            &kp RU_CYRILLIC_EN   &kp RU_CYRILLIC_GHE             &kp RU_CYRILLIC_SHA                &kp RU_CYRILLIC_SHCHA          &kp RU_CYRILLIC_ZE              &kp RU_CYRILLIC_HA
 &kp TAB       &hml LEFT_GUI RU_CYRILLIC_EF  &hml LEFT_ALT RU_CYRILLIC_YERU  &hml LEFT_CONTROL RU_CYRILLIC_VE  &hml LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER   &hmr RIGHT_SHIFT RU_CYRILLIC_O  &hmr RIGHT_CONTROL RU_CYRILLIC_EL  &hmr RIGHT_ALT RU_CYRILLIC_DE  &hmr RIGHT_GUI RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LS(BSLH)  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &kp LG(C)    &kp LG(V)    &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &mkp MB1                        &mkp MB2
+&kp LS(BSLH)  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &trans       &trans       &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &trans                          &trans
                                                                                                               &kp RU_EXCL                    &layer_en           &kp SPACE    &lt 3 ENTER  &lt 5 LA(BACKSPACE)  &lt 7 BACKSPACE
             >;
 
@@ -181,7 +174,7 @@
             label = "ru";
             sensor-bindings =
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>,
-                <&inc_dec_kp LS(LA(RIGHT_ARROW)) LS(LA(LEFT_ARROW))>;
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         num {
@@ -194,6 +187,7 @@
 
             display-name = "en num";
             label = "en num";
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         numru {
@@ -209,10 +203,10 @@
 
         nav {
             bindings = <
-&none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
-&none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
-&kp BSLH  &none  &none  &none  &none      &none             &none                &none  &none  &none  &none  &none  &none  &none
-                               &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
+&none     &none  &none  &none         &none           &none                                         &none  &none  &none  &none  &none  &none
+&none     &none  &none  &none         &none           &none                                         &none  &none  &none  &none  &none  &none
+&kp BSLH  &none  &none  &msc SCRL_UP  &msc SCRL_DOWN  &none             &none                &none  &none  &none  &none  &none  &none  &none
+                                      &kp COLON       &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
             >;
 
             display-name = "en nav";
@@ -223,10 +217,10 @@
             label = "ru nav";
             display-name = "ru nav";
             bindings = <
-&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
-&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
-&kp RU_BACKSLASH  &none  &none  &none  &none         &none        &none           &none  &none  &none  &none  &none  &none  &none
-                                       &kp RU_COLON  &kv_sk_left  &kv_sk_right    &none  &none  &none
+&none             &none  &none  &none         &none           &none                               &none  &none  &none  &none  &none  &none
+&none             &none  &none  &none         &none           &none                               &none  &none  &none  &none  &none  &none
+&kp RU_BACKSLASH  &none  &none  &msc SCRL_UP  &msc SCRL_DOWN  &none        &none           &none  &none  &none  &none  &none  &none  &none
+                                              &kp RU_COLON    &kv_sk_left  &kv_sk_right    &none  &none  &none
             >;
         };
 
