@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     quick-tap-ms = <200>;
@@ -30,11 +29,13 @@
         tochka {
             bindings = <&kp RU_DOT>;
             key-positions = <19 20>;
+            layers = <1>;
         };
 
         zpt {
             bindings = <&kp RU_COMMA>;
             key-positions = <16 15>;
+            layers = <1>;
         };
 
         reshetka_ru {
@@ -58,6 +59,18 @@
         reshetka_en {
             bindings = <&kp HASH>;
             key-positions = <17 16>;
+            layers = <0>;
+        };
+
+        endot {
+            bindings = <&kp DOT>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        enzpt {
+            bindings = <&kp COMMA>;
+            key-positions = <15 16>;
             layers = <0>;
         };
     };
@@ -96,7 +109,7 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(NUMBER_2))>;
+            bindings = <&kp LC(LS(NUMBER_2)) &kp LA(LS(NUMBER_2))>;
             label = "TO_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -105,7 +118,7 @@
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N1))>;
+            bindings = <&kp LS(LC(N1)) &kp LS(LA(N1))>;
             label = "TO_EN";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -187,7 +200,6 @@
 
             display-name = "en num";
             label = "en num";
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         numru {
@@ -203,10 +215,10 @@
 
         nav {
             bindings = <
-&none     &none  &none  &none         &none           &none                                         &none  &none  &none  &none  &none  &none
-&none     &none  &none  &none         &none           &none                                         &none  &none  &none  &none  &none  &none
-&kp BSLH  &none  &none  &msc SCRL_UP  &msc SCRL_DOWN  &none             &none                &none  &none  &none  &none  &none  &none  &none
-                                      &kp COLON       &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
+&none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
+&none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
+&kp BSLH  &none  &none  &none  &none      &none             &none                &none  &none  &none  &none  &none  &none  &none
+                               &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
             >;
 
             display-name = "en nav";
@@ -217,10 +229,10 @@
             label = "ru nav";
             display-name = "ru nav";
             bindings = <
-&none             &none  &none  &none         &none           &none                               &none  &none  &none  &none  &none  &none
-&none             &none  &none  &none         &none           &none                               &none  &none  &none  &none  &none  &none
-&kp RU_BACKSLASH  &none  &none  &msc SCRL_UP  &msc SCRL_DOWN  &none        &none           &none  &none  &none  &none  &none  &none  &none
-                                              &kp RU_COLON    &kv_sk_left  &kv_sk_right    &none  &none  &none
+&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
+&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
+&kp RU_BACKSLASH  &none  &none  &none  &none         &none        &none           &none  &none  &none  &none  &none  &none  &none
+                                       &kp RU_COLON  &kv_sk_left  &kv_sk_right    &none  &none  &none
             >;
         };
 
