@@ -200,7 +200,7 @@
             bindings = <
 &kp ESC   &kp Q            &kp W            &kp E         &kp R              &kp T                                                 &kp Y                &kp U               &kp I         &kp O             &kp P                &kp LEFT_BRACKET
 &kp TAB   &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                                                 &kp H                &hmr RIGHT_SHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI  &kp RIGHT_BRACKET
-&kp FSLH  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp LG(LA(LS(NUMBER_4)))    &kp LG(LS(S))  &kp N                &kp M               &none         &none             &none                &win_ru
+&kp FSLH  &kp Z            &kp X            &kp C         &kp V              &kp B      &kp LG(LA(LS(NUMBER_4)))    &kp LG(LS(S))  &kp N                &kp M               &none         &none             &none                &none
                                                           &lt 8 EXCL         &layer_ru  &kp SPACE                   &lt 2 ENTER    &lt 4 LA(BACKSPACE)  &lt 6 BACKSPACE
             >;
 
@@ -215,7 +215,7 @@
             bindings = <
 &kp ESC       &kp RU_CYRILLIC_SHORT_I       &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U                 &kp RU_CYRILLIC_KA             &kp RU_CYRILLIC_IE                            &kp RU_CYRILLIC_EN   &kp RU_CYRILLIC_GHE             &kp RU_CYRILLIC_SHA                &kp RU_CYRILLIC_SHCHA          &kp RU_CYRILLIC_ZE              &kp RU_CYRILLIC_HA
 &kp TAB       &hml LEFT_GUI RU_CYRILLIC_EF  &hml LEFT_ALT RU_CYRILLIC_YERU  &hml LEFT_CONTROL RU_CYRILLIC_VE  &hml LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER   &hmr RIGHT_SHIFT RU_CYRILLIC_O  &hmr RIGHT_CONTROL RU_CYRILLIC_EL  &hmr RIGHT_ALT RU_CYRILLIC_DE  &hmr RIGHT_GUI RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LS(BSLH)  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &trans       &trans       &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &kp RU_CYRILLIC_HARD_SIGN       &win_en
+&kp LS(BSLH)  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES                &kp RU_CYRILLIC_EM             &kp RU_CYRILLIC_I   &trans       &trans       &kp RU_CYRILLIC_TE   &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE                 &kp RU_CYRILLIC_YU             &kp RU_CYRILLIC_HARD_SIGN       &kp RU_CYRILLIC_IO
                                                                                                               &kp RU_EXCL                    &layer_en           &kp SPACE    &lt 3 ENTER  &lt 5 LA(BACKSPACE)  &lt 7 BACKSPACE
             >;
 
@@ -229,7 +229,7 @@
         num {
             bindings = <
 &kp PRCNT  &kp N1   &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                          &none  &none  &none  &none  &none  &none
-&none      &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9     &kp N0                                &none  &none  &none  &none  &none  &none
+&kp UNDER  &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9     &kp N0                                &none  &none  &none  &none  &none  &none
 &kp PIPE   &kp DOT  &kp RU_ASTERISK  &kp PLUS      &kp MINUS     &kp EQUAL     &kp LG(X)    &kp LG(A)  &none  &none  &none  &none  &none  &none
                                                    &kp QUESTION  &kp LPAR      &kp RPAR     &none      &none  &none
             >;
@@ -243,7 +243,7 @@
             display-name = "ru num";
             bindings = <
 &kp PRCNT              &kp N1      &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                    &none  &none  &none  &none  &none  &none
-&none                  &kp N6      &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                          &none  &none  &none  &none  &none  &none
+&kp RU_UNDERSCORE      &kp N6      &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                          &none  &none  &none  &none  &none  &none
 &kp LS(LA(BACKSLASH))  &kp RU_DOT  &kp RU_ASTERISK  &kp RU_PLUS   &kp RU_MINUS     &kp RU_EQUAL             &kp LG(X)                   &kp LG(A)  &none  &none  &none  &none  &none  &none
                                                                   &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none      &none  &none
             >;
