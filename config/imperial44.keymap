@@ -274,10 +274,10 @@
 
         sym {
             bindings = <
-&none  &none  &none  &none  &none     &none                                     &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none     &none                                     &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none     &none           &none              &none  &none  &none  &none  &none  &none  &none
-                            &kp SEMI  &kp LEFT_BRACE  &kp RIGHT_BRACE    &none  &none  &none
+&none  &none  &none  &none             &none      &none                                        &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none             &none      &none                                        &none  &none  &none  &none  &none  &none
+&none  &none  &none  &kp SINGLE_QUOTE  &kp GRAVE  &kp DOUBLE_QUOTES  &none              &none  &none  &none  &none  &none  &none  &none
+                                       &kp SEMI   &kp LEFT_BRACE     &kp RIGHT_BRACE    &none  &none  &none
             >;
 
             display-name = "en sym";
