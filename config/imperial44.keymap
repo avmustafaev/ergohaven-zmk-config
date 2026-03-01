@@ -264,14 +264,15 @@
         };
 
         dig {
-            label = "dig";
-            display-name = "n num";
             bindings = <
 &kp RU_PERCENT     &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RU_PLUS                         &none  &none  &none  &none  &none  &none
 &kp RU_UNDERSCORE  &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                        &none  &none  &none  &none  &none  &none
 &kp PIPE           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp AT_SIGN    &none  &none  &none  &none  &none  &none  &none
                                                                       &kp QMARK        &kp LPAR      &kp RPAR       &none  &none  &none
             >;
+
+            display-name = "n num";
+            label = "dig";
         };
 
         digru {
@@ -343,26 +344,25 @@
             label = "fn";
         };
 
-        num {
+        dig {
+            label = "dig";
+            display-name = "n num";
             bindings = <
-&kp PRCNT  &kp N1   &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &none  &none  &none  &none  &none  &none
-&kp UNDER  &kp N6   &kp RU_N7        &kp RU_N8     &kp RU_N9     &kp N0                           &none  &none  &none  &none  &none  &none
-&kp PIPE   &kp DOT  &kp RU_ASTERISK  &kp PLUS      &kp MINUS     &kp EQUAL     &none       &none  &none  &none  &none  &none  &none  &none
-                                                   &kp QUESTION  &kp LPAR      &kp RPAR    &none  &none  &none
+&kp RU_PERCENT     &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RU_PLUS                         &none  &none  &none  &none  &none  &none
+&kp RU_UNDERSCORE  &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                        &none  &none  &none  &none  &none  &none
+&kp PIPE           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp AT_SIGN    &none  &none  &none  &none  &none  &none  &none
+                                                                      &kp QMARK        &kp LPAR      &kp RPAR       &none  &none  &none
             >;
-
-            display-name = "en num";
-            label = "en num";
         };
 
-        numru {
-            label = "ru num";
-            display-name = "ru num";
+        digru {
+            label = "dig ru";
+            display-name = "n num";
             bindings = <
-&kp PRCNT              &kp N1      &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                                &none  &none  &none  &none  &none  &none
-&kp RU_UNDERSCORE      &kp N6      &kp RU_N7        &kp RU_N8     &kp RU_N9        &kp N0                                                      &none  &none  &none  &none  &none  &none
-&kp LS(LA(BACKSLASH))  &kp RU_DOT  &kp RU_ASTERISK  &kp RU_PLUS   &kp RU_MINUS     &kp RU_EQUAL             &none                       &none  &none  &none  &none  &none  &none  &none
-                                                                  &kp RU_QUESTION  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS    &none  &none  &none
+&kp RU_PERCENT            &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RU_PLUS                         &none  &none  &none  &none  &none  &none
+&kp RU_UNDERSCORE         &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                        &none  &none  &none  &none  &none  &none
+&kp LS(LA(RU_BACKSLASH))  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp AT_SIGN    &none  &none  &none  &none  &none  &none  &none
+                                                                             &kp QMARK        &kp LPAR      &kp RPAR       &none  &none  &none
             >;
         };
     };
