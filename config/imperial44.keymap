@@ -265,10 +265,10 @@
 
         dig {
             bindings = <
-&kp RU_PERCENT     &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RU_PLUS                         &none  &none  &none  &none  &none  &none
-&kp RU_UNDERSCORE  &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                        &none  &none  &none  &none  &none  &none
-&kp PIPE           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp AT_SIGN    &none  &none  &none  &none  &none  &none  &none
-                                                                      &kp QMARK        &kp LPAR      &kp RPAR       &none  &none  &none
+&kp RU_PERCENT     &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                        &none  &none  &none  &none  &none  &none
+&kp RU_UNDERSCORE  &kp DOT          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                           &none  &none  &none  &none  &none  &none
+&kp PIPE           &kp PLUS         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS        &kp AT_SIGN    &none  &none  &none  &none  &none  &none  &none
+                                                                      &kp QMARK        &kp LPAR         &kp RPAR       &none  &none  &none
             >;
 
             display-name = "n num";
@@ -279,18 +279,18 @@
             label = "dig ru";
             display-name = "n num";
             bindings = <
-&kp RU_PERCENT            &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RU_PLUS                         &none  &none  &none  &none  &none  &none
-&kp RU_UNDERSCORE         &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                        &none  &none  &none  &none  &none  &none
-&kp LS(LA(RU_BACKSLASH))  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp AT_SIGN    &none  &none  &none  &none  &none  &none  &none
-                                                                             &kp QMARK        &kp LPAR      &kp RPAR       &none  &none  &none
+&kp RU_PERCENT            &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                        &none  &none  &none  &none  &none  &none
+&kp RU_UNDERSCORE         &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                           &none  &none  &none  &none  &none  &none
+&kp LS(LA(RU_BACKSLASH))  &kp RU_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS        &kp AT_SIGN    &none  &none  &none  &none  &none  &none  &none
+                                                                             &kp RU_QUESTION  &kp LPAR         &kp RPAR       &none  &none  &none
             >;
         };
 
         nav {
             bindings = <
 &none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
-&none     &none  &none  &none  &kp AT     &none                                         &none  &none  &none  &none  &none  &none
-&kp BSLH  &none  &none  &nano  &kp LC(X)  &kp LC(O)         &kp AT_SIGN          &none  &none  &none  &none  &none  &none  &none
+&none     &none  &none  &none  &none      &none                                         &none  &none  &none  &none  &none  &none
+&kp BSLH  &none  &none  &nano  &kp LC(X)  &kp LC(O)         &none                &none  &none  &none  &none  &none  &none  &none
                                &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none
             >;
 
@@ -302,10 +302,10 @@
             label = "ru nav";
             display-name = "ru nav";
             bindings = <
-&kp RU_PERCENT     &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RU_PLUS                          &none  &none  &none  &none  &none  &none
-&kp RU_UNDERSCORE  &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                         &none  &none  &none  &none  &none  &none
-&kp RU_BACKSLASH   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &none           &none  &none  &none  &none  &none  &none  &none
-                                                                      &kp RU_COLON     &kv_sk_left   &kv_sk_right    &none  &none  &none
+&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
+&none             &none  &none  &none  &none         &none                               &none  &none  &none  &none  &none  &none
+&kp RU_BACKSLASH  &none  &none  &none  &none         &none        &none           &none  &none  &none  &none  &none  &none  &none
+                                       &kp RU_COLON  &kv_sk_left  &kv_sk_right    &none  &none  &none
             >;
         };
 
