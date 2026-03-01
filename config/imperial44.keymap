@@ -241,7 +241,7 @@
                                                           &lt 8 EXCL         &layer_ru  &kp SPACE                   &lt 2 ENTER    &lt 4 FSLH  &kp BACKSPACE
             >;
 
-            display-name = "en    ";
+            display-name = "en";
             label = "en";
             sensor-bindings =
                 <&inc_dec_kp DOWN_ARROW UP>,
@@ -271,13 +271,13 @@
                                                                       &kp QMARK        &kp LPAR         &kp RPAR       &none  &none  &none
             >;
 
-            display-name = "n num";
+            display-name = "dig";
             label = "dig";
         };
 
         digru {
             label = "dig ru";
-            display-name = "n num";
+            display-name = "dig ru";
             bindings = <
 &kp RU_PERCENT            &kp RU_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                        &none  &none  &none  &none  &none  &none
 &kp RU_UNDERSCORE         &kp RU_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RU_EQUAL                           &none  &none  &none  &none  &none  &none
